@@ -1,1 +1,1 @@
-*Front End Web Fall 2024 Homework Assignments ✨*
+Front End Web Fall 2024 Homework Assignments ✨
