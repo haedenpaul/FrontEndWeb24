@@ -321,3 +321,73 @@ footer{
     text-align: center;
 }
 
+footer .fa{
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    body{
+        background-repeat: repeat;
+    }
+
+    header{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    header h1{
+        font-size: 98px;
+    }
+
+
+    .my_photo{
+        display: none;
+    }
+
+    .nav_menu{
+        width: 600px;
+        height: 60px;
+        font-size: 20px;
+    }
+        
+
+    #middle_section{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 600px;
+        height: 1222px;
+    }
+
+    .bio{
+        display: none;
+    }
+
+    .stars{
+        display: none;
+    }
+
+    #skills_section{
+        width: 550px;
+    }
+
+    .skills img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .skills p{
+        font-size: 13px;
+    }
+
+
+}
+
+
+
