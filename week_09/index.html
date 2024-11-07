@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 9 Homework</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+  </head>
+
+    <body>
+        <div class="container">
+            <h1>Final Physics Grade Calculator</h1>
+            <form>
+                <label for="homework">What is your Homework average (5%)?</label>
+              <input
+                type="number"
+                name="homework"
+                id="homework"
+                min="0"
+                step="1"
+                required
+              />
+              <label for="attendance">What is your Attendance average (10%)?</label>
+              <input
+                type="number"
+                name="attendance"
+                id="attendance"
+                min="0"
+                step="1"
+                required
+              />
+              <label for="quiz">What is your Quiz average (20%)?</label>
+              <input
+                type="number"
+                name="quiz"
+                id="quiz"
+                min="0"
+                step="1"
+                required
+              />
+              <label for="midterm">What did you get on your Midterm (30%)?</label>
+              <input
+                type="number"
+                name="midterm"
+                id="midterm"
+                min="0"
+                step="1"
+                required
+              />
+              <label for="final">What did you get on your Final (35%)?</label>
+              <input
+                type="number"
+                name="final"
+                id="final"
+                min="0"
+                step="1"
+                required
+              />
+              <br />
+              <button type="submit" id="gradeBtn">Calculate Final Grade</button>
+            </form>
+            <div class="well" id="gradeResult"></div>
+        </div>
+    </body>
+</html>
