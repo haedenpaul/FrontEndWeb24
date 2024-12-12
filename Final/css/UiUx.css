@@ -1,0 +1,289 @@
+* {
+  box-sizing:border-box;
+  background-color: rgb(255, 252, 247);
+}
+
+
+
+/* Nav Bar */
+
+header{
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-around;
+  padding: 2px;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+}
+
+header img{
+  width: 120px;
+  height: 100px;
+}
+
+header .uiux{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header .graphdes{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header .playlist{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header .about{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header .contact{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+h1{
+  /* background-color: bisque; */
+  font-size: 45px;
+  font-weight: 300;
+  padding-inline: 5px;
+  /* padding-left: 30px; */
+  text-align: center;
+  height: 55px;  
+}
+
+h1 a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+
+.menu {
+  /* background-color: chartreuse; */
+  padding: 0;
+  list-style-type: none;
+  padding-right: 20px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+
+}
+
+
+.menu li a{
+  /* background-color: hotpink; */
+  padding-inline: 30px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.menu li a:hover {
+  color: #ad2929;
+}
+
+
+
+
+/* Title */
+
+h3{
+  font-size: 25px;
+  padding: 15px;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Slideshow container */
+
+.slideshow1-section{
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.slideshow2-section{
+  /* background-color:blueviolet; */
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 70px;
+}
+
+.slideshow-text{
+  /* background-color: #ed8787; */
+  width: 550px;
+  text-align: center;
+  align-content: center;
+}
+
+.slideshow-text h2{
+  font-size: 25px;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+
+}
+
+.slideshow-text p{
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: 0px;
+  
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2 {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(213, 213, 213, 0.8);
+}
+
+  .mySlides2{
+    background-color: #e6cd6857;
+    max-width: 470px;
+    border-radius: 60px;
+  }
+
+  .mySlides2 img{
+    display: flex;
+    margin: auto;
+  }
+
+  /* Mobile View */
+  @media screen and (max-width: 768px){
+
+    /* nav bar */
+
+    header img{
+      width: 50px;
+      height: 40px;
+    }
+
+    h1{
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu {
+      /* background-color: chartreuse; */
+      padding: 0;
+      list-style-type: none;
+      padding-right: 0px;
+      display: flex;
+      font-size: 15px;
+      font-weight: 300;    
+    }
+
+    /* slideshow sections */
+
+    .slideshow1-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Next & previous buttons */
+  .slideshow1-section .prev {
+    left: 0;
+  }
+
+  /* Position the "next button" to the right */
+  .slideshow1-section .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+    
+    .slideshow2-section{
+      /* background-color:blueviolet; */
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 70px;
+    }
+    
+    .slideshow-text{
+      /* background-color: #ed8787; */
+      width: 550px;
+      text-align: center;
+      align-content: center;
+    }
+    
+    .slideshow-text h2{
+      font-size: 25px;
+      font-family: "Itim", cursive;
+      font-weight: 400;
+      font-style: normal;
+      align-items: center;
+    
+    }
+    
+    .slideshow-text p{
+      font-size: 17px;
+      font-family: "Quicksand", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: 0px;
+      
+    }
+  }

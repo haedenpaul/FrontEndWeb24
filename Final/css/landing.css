@@ -1,0 +1,148 @@
+* {
+    box-sizing:border-box;
+    /* background-color: rgb(255, 252, 247); */
+}
+
+body{
+    background-color: rgb(255, 252, 247);
+    font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+img{
+    width: 110px;
+    height: auto;
+}
+
+.icons a{
+    text-decoration: none;
+    color: black;
+}
+
+.icons p{
+    font-size: 23px;
+}
+
+
+
+#top_row{
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+#middle_row{
+    /* background-color:chartreuse; */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#bottom_row{
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+}
+
+header .uiux{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.graphdes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.playlist{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.my_face{
+    /* background-color: azure; */
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.my_face img{
+    width: 270px;
+    height: auto;
+    margin: auto;
+}
+
+.my_face p{
+    font-size: 40px;
+    margin: auto;
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 768px){
+
+    .icons img{
+        width: 100px;
+    }
+
+    .my_face img{
+        width: 180px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .icons p{
+        font-size: 20px;
+    }
+
+    .my_face p{
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    #top_row{
+        padding-top: 20px;
+    }
+
+    #middle_row{
+        width: 600px;
+    }
+    
+    #bottom_row{
+        width: 450px;
+        
+    }
+}
