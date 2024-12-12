@@ -1,0 +1,238 @@
+* {
+  box-sizing:border-box;
+  /* background-color: rgb(255, 252, 247); */
+}
+
+body{
+  background-color: rgb(255, 252, 247);
+}
+
+/* Nav Bar */
+
+header{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    padding: 2px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+  }
+  
+  header img{
+    width: 120px;
+    height: 100px;
+  }
+  
+  header .uiux{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header .graphdes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header .playlist{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header .about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  header .contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  
+  h1{
+    /* background-color: bisque; */
+    font-size: 45px;
+    font-weight: 300;
+    padding-inline: 5px;
+    /* padding-left: 30px; */
+    text-align: center;
+    height: 55px;  
+  }
+  
+  h1 a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+  
+  
+  .menu {
+    /* background-color: chartreuse; */
+    padding: 0;
+    list-style-type: none;
+    padding-right: 20px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 300;
+  
+  }
+  
+  
+  .menu li a{
+    /* background-color: hotpink; */
+    padding-inline: 30px;
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  .menu li a:hover {
+    color: #ad2929;
+  }
+
+  /* Title */
+
+  .topic{
+    font-size: 25px;
+    padding: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Contact Form */
+
+  .contact_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .contact-form{
+    max-width: 800px;
+    width: 100%;
+    height:525px;
+    background: #ffffff;
+    border: solid 1px #f75f5f;
+    border-radius: 12px;
+    margin: 0 240px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  .contact-form .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+  }
+  
+  .content .topic{
+    font-size: 22px;
+    font-weight: 500;
+    color: #f75f5f;
+    padding: 5px;
+  }
+  .content form{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .content .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+  }
+  .content .input-box input,
+  .content .message-box textarea{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: #ffeded;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .content .message-box textarea{
+    padding-top: 10px;
+  }
+  
+  .content .message-box{
+    min-height: 120px;
+    position: relative;
+  }
+  
+  /* Button that sends message via CodingNepal */
+  
+  .content .input-box input[type="submit"]{
+    color: #fff;
+    background: #f75f5f;
+    height: 60px;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  .content .input-box input[type="submit"]:hover{
+    background-color: rgb(255, 45, 45);
+  }
+  
+  /* Mobile View */
+  @media screen and (max-width: 768px){
+  /* nav bar */
+
+  header img{
+    width: 50px;
+    height: 40px;
+  }
+
+  h1{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    padding: 0;
+    list-style-type: none;
+    padding-right: 0px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 300;    
+  }
+}
+/* contact form */
+    .contact-form{
+      min-width: 500px;
+      width: 100%;
+      height:525px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact_section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    
